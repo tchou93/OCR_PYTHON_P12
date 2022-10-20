@@ -36,16 +36,16 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser):
-    first_name = models.CharField(_("first name"), max_length=25, blank=True)
-    last_name = models.CharField(_("last name"), max_length=25, blank=True)
+    first_name = models.CharField(_("first name"), max_length=25)
+    last_name = models.CharField(_("last name"), max_length=25)
     user_type = models.CharField(_("type"), max_length=50, choices=USERS_TYPE)
     email = models.EmailField()
-    phone = models.CharField(_("phone"), max_length=20, blank=True, null=True)
-    mobile = models.CharField(_("mobile"), max_length=20, blank=True, null=True)
+    phone = models.CharField(_("phone"), max_length=20, blank=True)
+    mobile = models.CharField(_("mobile"), max_length=20, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
 
     object = UserManager()
 
     def __str__(self):
-        return f"[{self.user_type}] {self.last_name}, {self.first_name}"
+        return f"[{self.user_type}] {self.last_name}, {self.first_name} (Id: {self.id})"
