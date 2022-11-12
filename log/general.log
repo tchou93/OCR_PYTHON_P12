@@ -1,2 +1,281 @@
 INFO D:\Tan\Travail\developpement\python\projetOC\projet12\epicevents\clients\admin.py changed, reloading.
 INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 250
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "POST /management/clients/ HTTP/1.1" 201 246
+INFO "GET /management/clients/ HTTP/1.1" 200 499
+INFO "GET /management/clients/550/ HTTP/1.1" 200 246
+INFO "GET /management/clients/549/ HTTP/1.1" 200 250
+INFO "PUT /management/clients/550/ HTTP/1.1" 200 247
+INFO "PUT /management/clients/549/ HTTP/1.1" 200 251
+INFO "DELETE /management/clients/550/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/549/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 250
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "POST /management/clients/ HTTP/1.1" 201 246
+INFO "GET /management/clients/ HTTP/1.1" 200 499
+INFO "GET /management/clients/552/ HTTP/1.1" 200 246
+INFO "GET /management/clients/551/ HTTP/1.1" 200 250
+INFO "PUT /management/clients/552/ HTTP/1.1" 200 247
+INFO "PUT /management/clients/551/ HTTP/1.1" 200 251
+INFO "DELETE /management/clients/552/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/551/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 250
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 250
+INFO "GET /clients/ HTTP/1.1" 201 252
+INFO "GET /clients/554/ HTTP/1.1" 200 250
+WARNING Forbidden: /clients/553/
+WARNING "GET /clients/553/ HTTP/1.1" 403 63
+INFO "PUT /clients/554/ HTTP/1.1" 200 251
+WARNING Forbidden: /clients/553/
+WARNING "PUT /clients/553/ HTTP/1.1" 403 63
+WARNING Method Not Allowed: /clients/554/
+WARNING "DELETE /clients/554/ HTTP/1.1" 405 43
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "DELETE /management/clients/554/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/553/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "GET /management/events/ HTTP/1.1" 200 634
+INFO "PUT /management/events/254/ HTTP/1.1" 200 235
+INFO "PUT /management/events/255/ HTTP/1.1" 200 237
+INFO "PUT /management/events/256/ HTTP/1.1" 200 237
+INFO "POST /login/ HTTP/1.1" 200 486
+WARNING Forbidden: /clients/
+WARNING "POST /clients/ HTTP/1.1" 403 63
+INFO "GET /clients/ HTTP/1.1" 201 495
+INFO "GET /clients/555/ HTTP/1.1" 200 246
+WARNING Forbidden: /clients/556/
+WARNING "GET /clients/556/ HTTP/1.1" 403 63
+WARNING Forbidden: /clients/555/
+WARNING "PUT /clients/555/ HTTP/1.1" 403 63
+WARNING Method Not Allowed: /clients/555/
+WARNING "DELETE /clients/555/ HTTP/1.1" 405 43
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "DELETE /management/clients/555/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/556/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/557/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 189
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "POST /management/contracts/ HTTP/1.1" 201 189
+INFO "GET /management/contracts/ HTTP/1.1" 200 381
+INFO "GET /management/contracts/341/ HTTP/1.1" 200 189
+INFO "GET /management/contracts/342/ HTTP/1.1" 200 189
+INFO "PUT /management/contracts/341/ HTTP/1.1" 200 188
+INFO "PUT /management/contracts/342/ HTTP/1.1" 200 188
+INFO "DELETE /management/contracts/341/ HTTP/1.1" 200 79
+INFO "DELETE /management/contracts/342/ HTTP/1.1" 200 79
+INFO "DELETE /management/clients/558/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 189
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 189
+INFO "GET /contracts/ HTTP/1.1" 201 191
+INFO "GET /contracts/344/ HTTP/1.1" 200 189
+WARNING Forbidden: /contracts/343/
+WARNING "GET /contracts/343/ HTTP/1.1" 403 63
+INFO "PUT /contracts/344/ HTTP/1.1" 200 188
+WARNING Forbidden: /contracts/343/
+WARNING "PUT /contracts/343/ HTTP/1.1" 403 63
+WARNING Forbidden: /contracts/344/
+WARNING "DELETE /contracts/344/ HTTP/1.1" 403 63
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "DELETE /management/clients/559/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/560/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 189
+INFO "POST /login/ HTTP/1.1" 200 486
+WARNING Forbidden: /management/contracts/
+WARNING "POST /management/contracts/ HTTP/1.1" 403 63
+WARNING Forbidden: /contracts/
+WARNING "GET /contracts/ HTTP/1.1" 403 63
+WARNING Forbidden: /contracts/345/
+WARNING "GET /contracts/345/ HTTP/1.1" 403 63
+WARNING Forbidden: /contracts/345/
+WARNING "PUT /contracts/345/ HTTP/1.1" 403 63
+WARNING Forbidden: /contracts/344/
+WARNING "DELETE /contracts/344/ HTTP/1.1" 403 63
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "DELETE /management/clients/561/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "POST /management/clients/ HTTP/1.1" 201 246
+INFO "POST /management/contracts/ HTTP/1.1" 201 188
+INFO "GET /management/events/ HTTP/1.1" 200 213
+INFO "GET /management/events/ HTTP/1.1" 200 213
+INFO "GET /management/events/257/ HTTP/1.1" 200 211
+INFO "PUT /management/events/257/ HTTP/1.1" 200 255
+INFO "DELETE /management/events/257/ HTTP/1.1" 200 67
+INFO "DELETE /management/clients/562/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "GET /management/events/ HTTP/1.1" 200 212
+INFO "POST /login/ HTTP/1.1" 200 486
+WARNING Forbidden: /management/events/
+WARNING "GET /management/events/ HTTP/1.1" 403 63
+WARNING Forbidden: /management/events/259/
+WARNING "GET /management/events/259/ HTTP/1.1" 403 63
+WARNING Forbidden: /management/events/259/
+WARNING "PUT /management/events/259/ HTTP/1.1" 403 63
+WARNING Forbidden: /management/events/259/
+WARNING "DELETE /management/events/259/ HTTP/1.1" 403 63
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "DELETE /management/clients/563/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /clients/ HTTP/1.1" 201 246
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "GET /management/events/ HTTP/1.1" 200 423
+INFO "PUT /management/events/260/ HTTP/1.1" 200 208
+INFO "PUT /management/events/260/ HTTP/1.1" 200 208
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "GET /events/ HTTP/1.1" 201 210
+INFO "GET /events/260/ HTTP/1.1" 200 208
+WARNING Forbidden: /events/261/
+WARNING "GET /events/261/ HTTP/1.1" 403 63
+INFO "PUT /events/260/ HTTP/1.1" 200 252
+WARNING Forbidden: /events/261/
+WARNING "PUT /events/261/ HTTP/1.1" 403 63
+WARNING Method Not Allowed: /events/261/
+WARNING "DELETE /events/261/ HTTP/1.1" 405 43
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "DELETE /management/clients/564/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/565/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 250
+WARNING Bad Request: /contracts/
+WARNING "POST /contracts/ HTTP/1.1" 400 58
+INFO "PUT /clients/566/ HTTP/1.1" 200 246
+INFO "POST /contracts/ HTTP/1.1" 201 189
+INFO "PUT /contracts/350/ HTTP/1.1" 200 189
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "GET /management/events/ HTTP/1.1" 200 2
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "PUT /contracts/350/ HTTP/1.1" 200 188
+WARNING Forbidden: /contracts/350/
+WARNING "PUT /contracts/350/ HTTP/1.1" 403 63
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "GET /management/events/ HTTP/1.1" 200 212
+INFO "GET /management/events/ HTTP/1.1" 200 212
+INFO "PUT /management/events/262/ HTTP/1.1" 200 235
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "PUT /events/262/ HTTP/1.1" 200 233
+WARNING Forbidden: /events/262/
+WARNING "PUT /events/262/ HTTP/1.1" 403 63
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "DELETE /management/clients/566/ HTTP/1.1" 200 48
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 258
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 263
+INFO "POST /contracts/ HTTP/1.1" 201 188
+INFO "POST /clients/ HTTP/1.1" 201 259
+INFO "POST /contracts/ HTTP/1.1" 201 189
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "GET /management/events/ HTTP/1.1" 200 634
+INFO "PUT /management/events/263/ HTTP/1.1" 200 247
+INFO "PUT /management/events/264/ HTTP/1.1" 200 238
+INFO "PUT /management/events/265/ HTTP/1.1" 200 239
+INFO "GET /management/clients/ HTTP/1.1" 200 784
+INFO "GET /management/clients/?first_name=Th%C3%A9o&last_name= HTTP/1.1" 200 260
+INFO "GET /management/clients/?email=clientest3@test.fr HTTP/1.1" 200 261
+INFO "GET /management/contracts/ HTTP/1.1" 200 569
+INFO "GET /management/contracts/?first_name=Gregory&last_name=Julien HTTP/1.1" 200 191
+INFO "GET /management/contracts/?email=clientest2@test.fr HTTP/1.1" 200 190
+INFO "GET /management/contracts/?year_contract&min_year_contract=2022&max_year_contract&month_contract&min_month_contract&max_month_contract&day_contract&min_day_contract&max_day_contract HTTP/1.1" 200 569
+INFO "GET /management/contracts/?min_amount=600&max_amount=4000 HTTP/1.1" 200 380
+INFO "GET /management/events/ HTTP/1.1" 200 728
+INFO "GET /management/events/?first_name=Gregory&last_name=Julien HTTP/1.1" 200 241
+INFO "GET /management/events/?email=clientest2@test.fr HTTP/1.1" 200 240
+INFO "GET /management/events/?year_event&min_year_event=2022&max_year_event&month_event&min_month_event&max_month_event&day_event&min_day_event&max_day_event HTTP/1.1" 200 489
+INFO "DELETE /management/clients/567/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/568/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/569/ HTTP/1.1" 200 48
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO D:\Tan\Travail\developpement\python\projetOC\projet12\epicevents\app\contracts\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO D:\Tan\Travail\developpement\python\projetOC\projet12\epicevents\app\contracts\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO D:\Tan\Travail\developpement\python\projetOC\projet12\epicevents\app\events\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "POST /login/ HTTP/1.1" 200 486
+INFO "POST /clients/ HTTP/1.1" 201 250
+INFO "POST /login/ HTTP/1.1" 200 483
+INFO "POST /management/clients/ HTTP/1.1" 201 246
+INFO "GET /management/clients/ HTTP/1.1" 200 499
+INFO "GET /management/clients/571/ HTTP/1.1" 200 246
+INFO "GET /management/clients/570/ HTTP/1.1" 200 250
+INFO "PUT /management/clients/571/ HTTP/1.1" 200 247
+INFO "PUT /management/clients/570/ HTTP/1.1" 200 251
+INFO "DELETE /management/clients/571/ HTTP/1.1" 200 48
+INFO "DELETE /management/clients/570/ HTTP/1.1" 200 48
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 5138
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 5189
+INFO "GET /admin HTTP/1.1" 301 0
+INFO "GET /admin/ HTTP/1.1" 200 8247
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+INFO "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO "GET /admin/ HTTP/1.1" 200 8247
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO "GET /admin/clients/client/ HTTP/1.1" 200 6678
+INFO "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+INFO "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO "GET /admin/contracts/contract/ HTTP/1.1" 200 6700
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/events/event/ HTTP/1.1" 200 6667
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/users/user/ HTTP/1.1" 200 9500
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 7008
+INFO "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/users/user/ HTTP/1.1" 200 9500
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
