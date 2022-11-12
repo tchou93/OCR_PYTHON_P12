@@ -10,36 +10,35 @@ USERS_TYPE = [
 
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, username, password, user_type, **other_fields):
-        email = self.normalize_email(email)
-        user = self.model(username=username,
-                          email=email,
-                          user_type=user_type,
-                          **other_fields)
+    def create_user(self, email, username, user_type, password=None):
+        if not email:
+            raise ValueError('Users must have an email address')
+
+        user = self.model(email=self.normalize_email(email),
+                          username=username,
+                          user_type=user_type)
+
         user.set_password(password)
-        user.save()
+        user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, password, **other_fields):
-        other_fields.setdefault("is_superuser", True)
-        other_fields.setdefault("is_staff", True)
-        other_fields.setdefault("is_active", True)
-        other_fields.setdefault("user_type", 'USER_MANAGEMENT')
-        if other_fields.get("is_staff") is not True:
-            raise ValueError("SuperUser must have is_staff=True.")
-        if other_fields.get("is_superuser") is not True:
-            raise ValueError("Superuser must have is_superuser=True.")
-        if other_fields.get("user_type") != 'USER_MANAGEMENT':
-            raise ValueError("Superuser must have role of management")
+    def create_superuser(self, email, username, password):
+        user = self.create_user(email=email, username=username, password=password, user_type="USER_MANAGEMENT")
+        user.is_admin = True
+        user.save(using=self._db)
 
-        return self.create_user(email, username, password, **other_fields)
+        return user
 
 
 class User(AbstractUser):
     first_name = models.CharField(_("first name"), max_length=25)
     last_name = models.CharField(_("last name"), max_length=25)
     user_type = models.CharField(_("type"), max_length=50, choices=USERS_TYPE)
-    email = models.EmailField()
+    email = models.EmailField(
+        verbose_name='email address',
+        max_length=255,
+        unique=True,
+    )
     phone = models.CharField(_("phone"), max_length=20, blank=True)
     mobile = models.CharField(_("mobile"), max_length=20, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
@@ -47,5 +46,14 @@ class User(AbstractUser):
 
     object = UserManager()
 
+    def save(self, *args, **kwargs):
+
+        if self.user_type == 'USER_MANAGEMENT':
+            self.is_staff = True
+            self.is_superuser = True
+
+        self.set_password(self.password)
+        return super(User, self).save(*args, **kwargs)
+
     def __str__(self):
-        return f"[{self.user_type}] {self.last_name}, {self.first_name} (Id: {self.id})"
+        return f"{self.email}"
