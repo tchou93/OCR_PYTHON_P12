@@ -1,5 +1,6 @@
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status, mixins
+from rest_framework.filters import SearchFilter
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
@@ -11,7 +12,15 @@ from app.users.permissions import IsManagement, IsSupport
 
 
 class EventViewList(mixins.CreateModelMixin, mixins.ListModelMixin, GenericViewSet):
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [SearchFilter, DjangoFilterBackend]
+    search_fields = ["event_name",
+                     "support_contact__first_name",
+                     "support_contact__last_name",
+                     "support_contact__email",
+                     "contract__client__first_name",
+                     "contract__client__last_name",
+                     "contract__client__email",
+                     "contract__client__company_name"]
     filterset_class = EventFilter
     permission_classes = [IsAuthenticated, IsSupport, EventPermissionList]
     serializer_class = EventSerializer
@@ -43,7 +52,15 @@ class EventViewObject(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mixins
 
 
 class ManagementEventView(ModelViewSet):
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [SearchFilter, DjangoFilterBackend]
+    search_fields = ["event_name",
+                     "support_contact__first_name",
+                     "support_contact__last_name",
+                     "support_contact__email",
+                     "contract__client__first_name",
+                     "contract__client__last_name",
+                     "contract__client__email",
+                     "contract__client__company_name"]
     filterset_class = EventFilter
     permission_classes = [IsAuthenticated, IsManagement]
     serializer_class = ManagementEventSerializer

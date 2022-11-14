@@ -1,5 +1,6 @@
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status, mixins
+from rest_framework.filters import SearchFilter
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
@@ -12,10 +13,11 @@ from app.clients.filter import ClientFilter
 
 
 class ClientViewList(mixins.CreateModelMixin, mixins.ListModelMixin, GenericViewSet):
-    filter_backends = DjangoFilterBackend
+    filter_backends = [SearchFilter, DjangoFilterBackend]
     filterset_class = ClientFilter
     permission_classes = [IsAuthenticated, ClientPermissionList, IsSaleSupport]
     serializer_class = ClientSerializer
+    search_fields = ["first_name", "last_name", "email", "company_name"]
 
     def get_queryset(self):
         return Client.objects.all()
@@ -51,7 +53,8 @@ class ClientViewObject(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mixin
 
 
 class ManagementClientView(ModelViewSet):
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [SearchFilter, DjangoFilterBackend]
+    search_fields = ["first_name", "last_name", "email", "company_name"]
     filterset_class = ClientFilter
     permission_classes = [IsAuthenticated, IsManagement]
     serializer_class = ManagementClientSerializer

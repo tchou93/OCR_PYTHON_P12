@@ -1,5 +1,6 @@
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status, mixins
+from rest_framework.filters import SearchFilter
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
@@ -12,7 +13,8 @@ from app.users.permissions import IsManagement, IsSale
 
 
 class ContractViewList(mixins.CreateModelMixin, mixins.ListModelMixin, GenericViewSet):
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [SearchFilter, DjangoFilterBackend]
+    search_fields = ["client__first_name", "client__last_name", "client__email", "client__company_name"]
     filterset_class = ContractFilter
     permission_classes = [IsAuthenticated, IsSale, ContractPermissionList]
     serializer_class = ContractSerializer
@@ -63,7 +65,8 @@ class ContractViewObject(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mix
 
 
 class ManagementContractView(ModelViewSet):
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [SearchFilter, DjangoFilterBackend]
+    search_fields = ["client__first_name", "client__last_name", "client__email", "client__company_name"]
     filterset_class = ContractFilter
     permission_classes = [IsAuthenticated, IsManagement]
     serializer_class = ManagementContractSerializer
