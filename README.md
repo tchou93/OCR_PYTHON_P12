@@ -16,12 +16,6 @@ $ source env/Scripts/activate
 $ pip install -r requirements.txt
 ```
 
-## Steps to run the server from the project root:
-```
-$ cd src
-$ python manage.py runserver
-```
-
 ## Documentation of the API (in french):
 ```
 For management team:
@@ -71,8 +65,10 @@ OKA = It is possible with autorization
 2) Create new project, then import:
 - api_tests/postman/LOCAL TEST ENV.postman_environment.json
 - api_tests/postman/INTEGRATION TESTS.postman_collection.json
-3) Run the collections and check the results
-*
+3) Run the server from the project root
+$ cd src
+$ python manage.py runserver
+4) Run the collections on postman and check the results
 ```
 
 ## Informations about the database using for tests:
@@ -85,7 +81,7 @@ password: "admin123"
 username: user_test_sales1
 password: user_sales1!!!
 
-| SALES1 |
+| SALES2 |
 username: user_test_sales2
 password: user_sales2!!!
 
@@ -93,7 +89,7 @@ password: user_sales2!!!
 username: user_test_support1
 password: user_support1!!!
 
-| SUPPORT1 |
+| SUPPORT2 |
 username: user_test_support1
 password: user_support1!!!
 ```
@@ -113,7 +109,7 @@ ALTER ROLE <user_name> SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE <project_name> TO <user_name>;
 ALTER USER <user_name> CREATEDB;
 
-* Modify the file setting.py:
+* Modify the setting file "setting.py" on django project :
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
